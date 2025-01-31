@@ -1,0 +1,6 @@
+id: scanner-main-page
+fields:
+  pageTitle: 'Scanner'
+placeholders:
+  jss-main:
+    - componentName: ScannerMainPage

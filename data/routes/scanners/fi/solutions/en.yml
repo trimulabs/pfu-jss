@@ -1,0 +1,6 @@
+id: solution-main-page
+fields:
+  pageTitle: 'Solutions and Services'
+placeholders:
+  jss-main:
+    - componentName: SolutionMainPage

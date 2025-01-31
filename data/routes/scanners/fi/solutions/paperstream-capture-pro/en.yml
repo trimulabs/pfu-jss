@@ -1,0 +1,6 @@
+id: solution-paper-page
+fields:
+  pageTitle: 'Paper Stream Capture Pro'
+placeholders:
+  jss-main:
+    - componentName: SolutionPaperStreamPage

@@ -1,0 +1,6 @@
+id: scanner-enterprise-page
+fields:
+  pageTitle: 'Scanner Enterprise'
+placeholders:
+  jss-main:
+    - componentName: ScannerEnterprisePage
