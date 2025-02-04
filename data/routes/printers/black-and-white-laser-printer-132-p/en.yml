@@ -1,0 +1,6 @@
+id: laser-printer-page
+fields:
+  pageTitle: 'Laser Printer'
+placeholders:
+  jss-main:
+    - componentName: OfficePrinterPage

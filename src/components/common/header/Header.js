@@ -3,6 +3,7 @@ import './styles.css';
 
 const Header = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const [activeSubmenu, setActiveSubmenu] = useState(null);
 
   const handleMouseEnter = (id) => {
     setActiveDropdown(id);
@@ -10,6 +11,15 @@ const Header = () => {
 
   const handleMouseLeave = () => {
     setActiveDropdown(null);
+    setActiveSubmenu(null);
+  };
+
+  const handleSubmenuEnter = (id) => {
+    setActiveSubmenu(id);
+  };
+
+  const handleSubmenuLeave = () => {
+    setActiveSubmenu(null);
   };
 
   return (
@@ -474,7 +484,7 @@ const Header = () => {
                         className="nav-link dropdown-toggle"
                         id="navbarDropdownMenuLink_9db79b0e-e624-4b6c-affd-8d10a626ac7b"
                         target
-                        href="#"
+                        href="/office-productivity"
                         title="Browse Office Productivity"
                         aria-haspopup="true"
                         aria-expanded="false"
@@ -495,13 +505,25 @@ const Header = () => {
                         <div className="row">
                           <div className="col-lg-8 offset-lg-1">
                             <ul className="inner-submenu">
-                              <li className="inner-menu">
+                              <li
+                                className="inner-menu"
+                                onMouseEnter={() => handleSubmenuEnter('printers')}
+                                onMouseLeave={handleSubmenuLeave}
+                              >
                                 <a href="#" target className aria-expanded="false">
                                   Printers
                                 </a>
-                                <ul className="third-level">
+                                <ul
+                                  className={`third-level ${
+                                    activeSubmenu === 'printers' ? 'show' : ''
+                                  }`}
+                                >
                                   <li>
-                                    <a href="#" target className>
+                                    <a
+                                      href="/printers/black-and-white-laser-printer-132-p"
+                                      target
+                                      className
+                                    >
                                       Black &amp; White Laser Printer
                                     </a>
                                   </li>
@@ -549,11 +571,19 @@ const Header = () => {
                                   </li>
                                 </ul>
                               </li>
-                              <li className="inner-menu">
+                              <li
+                                className="inner-menu"
+                                onMouseEnter={() => handleSubmenuEnter('projectors')}
+                                onMouseLeave={handleSubmenuLeave}
+                              >
                                 <a href="#" target className aria-expanded="false">
                                   Projectors
                                 </a>
-                                <ul className="third-level">
+                                <ul
+                                  className={`third-level ${
+                                    activeSubmenu === 'projectors' ? 'show' : ''
+                                  }`}
+                                >
                                   <li>
                                     <a href="#" target className>
                                       Business &amp; Classroom Projectors
@@ -581,11 +611,19 @@ const Header = () => {
                                   </li>
                                 </ul>
                               </li>
-                              <li className="inner-menu">
+                              <li
+                                className="inner-menu"
+                                onMouseEnter={() => handleSubmenuEnter('portable')}
+                                onMouseLeave={handleSubmenuLeave}
+                              >
                                 <a href="#" target className aria-expanded="false">
                                   Portable Monitors
                                 </a>
-                                <ul className="third-level">
+                                <ul
+                                  className={`third-level ${
+                                    activeSubmenu === 'portable' ? 'show' : ''
+                                  }`}
+                                >
                                   <li>
                                     <a href="#" target className>
                                       Wireless
@@ -617,7 +655,7 @@ const Header = () => {
                         className="nav-link dropdown-toggle"
                         id="navbarDropdownMenuLink_59e93e61-e61f-4d3a-87b7-d73f13748beb"
                         target
-                        href="#"
+                        href="/resources"
                         title="Browse Resources"
                         aria-haspopup="true"
                         aria-expanded="false"
@@ -637,8 +675,8 @@ const Header = () => {
                           <div className="col-lg-8 offset-lg-1">
                             <ul className="inner-submenu">
                               <li>
-                                <a href="#" target className="heading">
-                                  Blog
+                                <a href="/about-us" target className="heading">
+                                  About Us
                                 </a>
                               </li>
                               <li>

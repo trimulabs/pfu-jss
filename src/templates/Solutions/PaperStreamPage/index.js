@@ -80,7 +80,7 @@ const SolutionsPaper = () => {
           </div>
         </div>
       </section>
-      <section className="animated-video mb-0">
+      {/* <section className="animated-video mb-0">
         <div className="container">
           <div className="content">
             <div
@@ -93,19 +93,18 @@ const SolutionsPaper = () => {
                 opacity: 0,
               }}
             >
-              <div className="youtube-player" data-our-yt-id="HqEg0fNWens">
+              <div className="youtube-player">
                 <div className="youtube-player__preview">
                   <div className="youtube-player__overlay animate">
-                    <button data-yt-play-button className="yt-player__play" title="Play">
+                    <button className="yt-player__play" title="Play">
                       <span>Play</span>
                     </button>
                     <img src="https://www.pfu-us.ricoh.com/-/media/project/scanners/video-thumbs/pscp_thumb_25.jpg?h=925&w=1700&hash=C9E0C7745D7183D15CADFB4E9E31F944" />
                   </div>
                 </div>
-                <div className="yt-video-wrapper" style={{ display: 'none' }}>
+                <div className="yt-video-wrapper" style={{ display: 'block' }}>
                   <iframe
                     id="ytTarget"
-                    frameBorder={0}
                     allowFullScreen
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerPolicy="strict-origin-when-cross-origin"
@@ -119,7 +118,7 @@ const SolutionsPaper = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <section
         className="card-deck background-color-off-white featured-card arrow-cta items-per-row-fluid orientation-center theme-primary"
         data-show-more={3}

@@ -1,12 +1,12 @@
 import React from 'react';
-import ScannerEnterprise from '../templates/Scanners/EnterprisePage';
+import AboutUs from '../templates/Resources/AboutUsPage';
 /* eslint-disable no-trailing-spaces */
 /* eslint-disable prettier/prettier */
 /* eslint-disable react/react-in-jsx-scope */
-const ScannerEnterprisePage = () => (
+const AboutUsPage = () => (
   <div id="main-container">
-    <ScannerEnterprise />
+    <AboutUs />
   </div>
 );
 
-export default ScannerEnterprisePage;
+export default AboutUsPage;

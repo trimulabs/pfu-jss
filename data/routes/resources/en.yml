@@ -1,0 +1,6 @@
+id: resource-page
+fields:
+  pageTitle: 'Resources'
+placeholders:
+  jss-main:
+    - componentName: ResourceMainPage

@@ -1,0 +1,6 @@
+id: about-us-page
+fields:
+  pageTitle: 'About Us'
+placeholders:
+  jss-main:
+    - componentName: AboutUsPage

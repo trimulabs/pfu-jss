@@ -1,0 +1,6 @@
+id: office-page
+fields:
+  pageTitle: 'Office Productivity'
+placeholders:
+  jss-main:
+    - componentName: OfficeMainPage
